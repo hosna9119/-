@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<!-- saved from url=(0089)file:///C:/Users/asus/Desktop/html/%D9%BE%D8%B3%D8%AA%D9%87/%D8%AE%D8%A7%D9%86%D9%87.html -->
+<html lang="fa" dir="rtl" style="font-size: 10px;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دامون - فروشگاه پسته</title>
+    <style>
+        /* تنظیمات کلی */
+        @font-face {
+            font-family: 'mitra';
+            src: url(font/Far_Mitra/Far_Mitra.ttf) format('ttf');
+        }
+        @font-face {
+            font-family: 'vazir';
+            src: url(font/vazir-font-v16.1.0/Vazir-Bold.ttf) format('ttf');
+        }
+
+    
+*  {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    
+    
+    
+}
+
+body:not(header):not(footer){
+    line-height: 1.6;
+    color: #333;
+    padding-top: 8rem;
+    background-image: url(img/poster_4657514e-5f6e-478c-886c-dab1150955d2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+   
+    
+}
+
+/* هدر */
+header {
+    background-color: #4CAF50;
+   
+    position: fixed; /* اضافه کردن این خط */
+    width: 100%; /* عرض کامل */
+    top: 0; /* قرارگیری در بالای صفحه */
+    z-index: 1000; /* برای اینکه هدر بالاتر از سایر عناصر صفحه نمایش داده شود */
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+
+
+
+header nav ul {
+    margin: auto;
+    padding: auto;
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 2rem;
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .user-options {
+    display: flex;
+    padding-top: 2.5rem;
+    
+}
+
+header .user-options a {
+    margin-left: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    
+    
+}
+
+/* بنر اصلی */
+.hero {
+    background-image: url('images/hero-banner.jpg'); /* تصویر پس‌زمینه بنر */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 10rem 2rem;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content .btn {
+    background-color: #E74C3C;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+/* محصولات پیشنهادی */
+.featured-products {
+    padding: 5rem 2rem;
+    text-align: center;
+    gap: 1rem;
+    
+}
+
+.featured-products h2 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.product-grid {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+}
+
+.product {
+    flex: 1 1 calc(25% - 20px); /* هر محصول 25% عرض صفحه را بگیرد در نمایش دسکتاپ */
+        box-sizing: border-box; /* جلوگیری از بیرون زدن محتوا */
+        text-align: center;
+}
+
+.product:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.1);
+   }
+
+.product img {
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 33rem;
+}
+
+.product h3 {
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+}
+
+.product p {
+    color: #E74C3C;
+    font-weight: bold;
+}
+
+.product .btn {
+    background-color: #75efa8;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.view-all {
+    display: inline-block;
+    margin-top: 2rem;
+    color:#000000;
+    text-decoration: none;
+    font-size:  3rem;
+    border-style: solid;
+    border-radius: 0.5rem;
+    padding: 2rem 7rem 2rem 7rem;
+    
+    
+}
+.view-all:hover{
+    background-color: #55be55;
+    
+}
+
+
+/* چرا دیامون */
+.why-diamon {
+    padding: 5rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.why-diamon h2 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.benefits {
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    text-align: center;
+    margin: 0px;
+}
+
+.benefit img {
+    width: 5rem;
+    margin:0px;
+}
+
+/* نظرات مشتریان */
+.testimonials {
+    padding: 5rem 2rem;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.testimonial {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+    font-style: italic;
+}
+
+.testimonial h4 {
+    margin-top: 1rem;
+    font-weight: normal;
+    color: #3498DB;
+}
+
+/* عضویت در خبرنامه */
+.newsletter {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: #2C3E50;
+    color: #fff;
+}
+
+.newsletter h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.newsletter p {
+    margin-bottom: 2rem;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.newsletter input[type="email"] {
+    padding: 1rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.newsletter button {
+    background-color: #E74C3C;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+/* فوتر */
+footer {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.contact-info, .social-media {
+    margin-top: 1rem;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+.tab{
+    border-radius: 1.5rem;
+    display: block;
+    max-width: 64%;
+    height: auto;
+    font-size: 1.8rem;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    margin: 2rem auto;
+}
+.h2{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.iman{
+    display: block; /* لازم است تصویر به صورت بلاک نمایش داده شود تا margin:auto کار کند */
+    margin: 2rem auto; /* مرکز کردن تصویر به صورت افقی و ایجاد فاصله از بالا */
+    max-width: 50%;
+    height: auto;
+    border-radius: 1.5rem;
+}
+
+      
+        input[type="radio"] {
+            display: none;
+        }
+        .nav {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 1.6rem;
+            margin-top: -2.2rem;
+            color: white;
+            font-weight: bold;
+            font-size: 1.8rem;
+            transition: 0.6s ease;
+            border-radius: 0 0.3rem 0 0.3rem;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 1.6rem;
+            margin-top: -2.2rem;
+            color: white;
+            font-weight: bold;
+            font-size: 1.8rem;
+            border-radius: 0 0.3rem 0.3rem 0;
+            user-select: none;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .prev {
+            left: 0;
+            border-radius: 0.3rem 0 0 0.3rem;
+        }
+        .next {
+            right: 0;
+            border-radius: 0 0.3rem 0.3rem 0;
+        }
+        .dots {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 1.5rem;
+            width: 1.5rem;
+            margin: 0 0.5rem;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+       
+        .radio-buttons {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 1rem;
+        }
+        .radio-label {
+            cursor: pointer;
+            display: inline-block;
+            background-color: #bbb;
+            border-radius: 50%;
+            width: 1.2rem;
+            height: 1.2rem;
+            margin: 0 0.5rem;
+            transition: background-color 0.3s;
+        }
+        input[type="radio"]:checked + .radio-label {
+            background-color: #717171;
+        }
+
+
+
+
+
+
+
+
+        .container1 {
+            
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        
+
+        .intro1 {
+            text-align: center;
+            margin-bottom: 2rem;
+           
+            padding: 2rem;
+        }
+
+        .mission1, .values1 {
+           
+            border: 0.1rem solid #ddd;
+            border-radius: 0.8rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .team-section1 {
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .team-section1 img {
+            width: 12rem;
+            height: 12rem;
+            border-radius: 50%;
+            margin: 1rem;
+            object-fit: cover;
+        }
+
+
+
+
+
+
+        .container2 {
+            max-width: 99%;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        h2 {
+            color: #4CAF50;
+            text-align: center;
+            padding-bottom: 1rem;
+            border-bottom: 0.2rem solid #ddd;
+        }
+
+        .contact-info2 {
+            padding: 2rem;
+            border-radius: 0.8rem;
+            margin-bottom: 2rem;
+            width: 80%;
+        }
+
+        .contact-info2 p {
+            margin: 1rem 0;
+        }
+
+        .form-section2 {
+           
+            padding: 2rem;
+            border-radius: 0.8rem;
+            border: 0.2rem solid #4CAF50;
+            width: 80%;
+        }
+
+        .form-section2 label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .form-section2 input, .form-section2 textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border: 0.1rem solid #ddd;
+            border-radius: 0.5rem;
+            box-sizing: border-box;
+        }
+
+        .form-section2 button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 1em;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .form-section2 button:hover {
+            background-color: #086a36;
+        }
+
+       
+
+        .tab2{
+           
+            display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 2.5rem;
+        }
+
+        .banner-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr; /* دو سوم برای ستون اول و یک سوم برای ستون دوم */
+            grid-template-rows: auto; /* ارتفاع ردیف‌ها با محتوای آنها تنظیم شود */
+            gap: 10px; /* فاصله بین آیتم‌ها */
+            max-width: 800px; /* حداکثر عرض گرید کوچکتر شد */
+            margin: 50px auto; /* فاصله از بالا و وسط‌چین کردن */
+        }
+
+        .banner-large {
+            grid-column: 1 / 2; /* عکس بزرگ در ستون اول */
+            grid-row: 1 / 3; /* عکس بزرگ دو ردیف را اشغال می‌کند */
+            text-align: center;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .banner-small {
+            grid-column: 2 / 3; /* عکس‌های کوچک در ستون دوم */
+            text-align: center;
+            overflow: hidden;
+            height: 100%;
+            
+        }
+
+        .banner-small:first-child {
+            grid-row: 1 / 2; /* عکس اول کوچک در ردیف اول */
+            height: 100%;
+        }
+
+        .banner-small:last-child {
+            grid-row: 2 / 3; /* عکس دوم کوچک در ردیف دوم */
+            height: 100%;
+        }
+
+        @media (max-width: 768px) {
+        .product {
+            flex: 1 1 calc(50% - 20px); /* هر محصول 50% عرض صفحه را بگیرد در نمایش تبلت و گوشی بزرگ */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .product {
+            flex: 1 1 calc(100% - 20px); /* هر محصول کل عرض صفحه را بگیرد در گوشی‌های کوچک */
+        }
+        h2 {
+            font-size: 2rem; /* کاهش اندازه فونت تیتر */
+        }
+        h3 {
+            font-size: 1.5rem; /* کاهش اندازه فونت عنوان محصول */
+        }
+    }
+
+    </style>
+</head>
+<body>
+
+    <!-- هدر -->
+    <header>
+        
+        <div class="container" style="font-family: 'vazir' , sans-serif;">
+            <div class="logo">
+                <img src="img/photo_2024-11-29_12-33-45.jpg" width="100rem" alt="دامون">
+                
+                
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="mahsoolat.html">محصولات</a></li>
+                    <li><a href="#darbarema">درباره ما</a></li>
+                    <li><a href="#tamas">تماس با ما</a></li>
+                </ul>
+            </nav>
+            <div class="user-options">
+                <a href="file:///C:/Users/asus/Desktop/html/%D9%BE%D8%B3%D8%AA%D9%87/%D8%AE%D8%A7%D9%86%D9%87.html#" class="cart-icon">🛒</a>
+                <a href="vorood.html" class="login">ورود</a>
+            </div>
+        </div>
+    </header>
+    <div>
+        <br>
+        
+    <!-- بنر اصلی -->
+    <div class="banner-grid" style="width: 80%;">
+        <div class="banner-large">
+            <img src="img/b3.jpg" alt="عکس بزرگ" style="width: 100% ; /* عرض تصاویر مطابق با عرض باکس */
+            height: 100%;object-fit: cover; /* تناسب عکس حفظ شود */
+            ">
+        </div>
+        <div class="banner-small">
+            <img src="img/b2.jpg" alt="عکس کوچک 1" style="width: 100%;/* عرض تصاویر مطابق با عرض باکس */
+            height: 100%; object-fit: cover; /* تناسب عکس حفظ شود */
+           ">
+        </div>
+        <div class="banner-small">
+            <img src="img/b4.jpeg" alt="عکس کوچک 2" style="width: 100%; /* عرض تصاویر مطابق با عرض باکس */
+            height: 100%; object-fit: cover; /* تناسب عکس حفظ شود */
+           ">
+        </div>
+    </div>
+    <p style="
+   
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+    font-family: 'vazir' , sans-serif;">از دل باغات ایران تا میز شما، با پسته دامون!</p>
+    <!-- محصولات پیشنهادی -->
+    <section class="featured-products" style="width: 80%;font-family: 'vazir' , sans-serif;">
+        <div class="container">
+            <h2 style="font-size: 3rem;text-align: center;">محصولات پیشنهادی</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="img/akbr.jpg" alt="پسته اکبری">
+                    <h3 style="font-size: 2rem;">پسته اکبری</h3>
+                    <p >قیمت: 530,000 تومان</p>
+                    <br>
+                    <a href="#" class="btn">افزودن به سبد خرید</a>
+                </div>
+                <div class="product">
+                    <img src="img/kale.jpg" alt="پسته اکبری">
+                    <h3 style="font-size: 2rem;">پسته کله قوچی</h3>
+                    <p >قیمت: 480,000 تومان</p>
+                    <br>
+                    <a href="#" class="btn">افزودن به سبد خرید</a>
+                </div>
+                <div class="product">
+                    <img src="img/taz.jpg" alt="پسته تازه">
+                    <h3 style="font-size: 2rem;">پسته تازه</h3>
+                    <p>قیمت: 300,000 تومان</p>
+                    <br>
+                    <a href="#" class="btn">افزودن به سبد خرید</a>
+                </div>
+                <div class="product">
+                    <img src="img/maghz.jpg" alt="پسته تازه">
+                    <h3 style="font-size: 2rem;">مغز پسته</h3>
+                    <p>قیمت: 990,000 تومان</p>
+                    <br>
+                    <a href="#" class="btn">افزودن به سبد خرید</a>
+                </div>
+                <!-- محصولات بیشتر -->
+            </div>
+            <br>
+            <a href="mahsoolat.html" class="view-all" style="font-size: 2rem;font-family: 'vazir' , sans-serif;">مشاهده همه محصولات</a>
+        </div>
+    </section>
+    <br>
+    <hr>
+    <br>
+    <div style="max-width: 75%;font-size: 1.8rem;">
+        <h2 style="font-family: 'vazir' , sans-serif;">خواص پسته</h2>
+        <h5 style="font-family: 'mitra' , sans-serif;">
+            بررسی خواص پسته؛ نشان می‌دهد که این خشکبار آثار چشمگیری در کاهش وزن دارد. قسمت زیادی از چربی پسته در دیواره سلولی بافت آن ذخیره می‌شود که امکان جذب آن در روده وجود ندارد. این یکی از عواملی است که پسته را برای کاهش وزن مناسب می‌کند؛ چرا که چربی‌های موجود در پسته به طور کامل جذب نمی‌شوند.
+    
+    ذکر این نکته هم خالی از لطف نیست که کندن پوست پسته هنگام خوردن آن به خاطر زمان بر بودن موجب می‌شود که 41 درصد کمتر از خوردن مغز پسته پوست کنده کالری دریافت کنید.
+    
+    از جمله خاصیت پسته؛ این است که حاوی مقادیر قابل توجه ای از فیبر بوده که این ماده ی غذایی برای باکتری‌های روده مفید واقع می گردد. پس از تجزیه ی فیبر موجود در پسته، پروبیوتیک‌ها آن‌ها را به اسیدهای چرب با زنجیره کوتاه مانند بوتیرات تبدیل می‌کنند که فواید متعددی از جمله کاهش خطر ابتلا به مشکلات گوارشی، سرطان و بیماری‌های قلبی دارد.در بیان خواص پسته؛ به موضوع بیماری‌ های قلبی اشاره شد. در ادامه اما خاصیت پسته، در زمینه کاهش کلسترول به عنوان یک چربی مضر برای بدن مورد اشاره قرار می‌گیرد. پسته می‌تواند از شیوه‌های مختلفی خطر ابتلا به بیماری‌های قلبی را کاهش دهد. یکی از این شیوه‌ها تاثیر مثبت آنتی اکسیدان‌های موجود در پسته در کاهش کلسترول خون و نیز تنظیم فشار خون است.
+    
+    یک نوید ارزنده برای مبتلایان به فشار خون بالا این است که پسته علاوه بر کاهش کلسترول باعث کاهش فشار خون نیز می‌شود. نتایج 21 مطالعه در مورد تأثیر این میوه در کاهش فشار خون، نشان می‌دهد که مصرف آن باعث کاهش 1.82 میلی متر جیوه از حد بالایی فشار خون و 0.8 میلی متر جیوه از حد پایین فشار خون می‌شود</h5>
+    <br>
+    <h2 style="font-family: 'vazir' , sans-serif;">عوامل موثر بر قیمت پسته</h2>
+    <h5 style="font-family: 'mitra' , sans-serif;">
+        قیمت پسته درجه یک با توجه به نوع، بازار و کیفیت پسته متفاوت می باشد. برای مثال خرید پسته اکبری و احمد آقایی نسبت به سایر پسته ها دارای قیمت بیشتری می باشند؛ زیرا ظاهر زیبا و لوکسی دارند و سطح کشت و محصول آن ها محدود می باشد.
+    
+        در خرید پسته برای پذیرایی، سوغات یا مصرف روزمره، می‌توان انواع مختلفی را انتخاب نمود. همین مساله، تاثیر بسزایی بر قیمت پسته دارد. بنابراین، بهتر است قبل از اقدام برای خرید، هدف خود را مشخص کنید. معمولا پسته‌های لوکس مانند پسته اکبری و پسته آقایی، گزینه‌های بهتری برای سوغات هستند. در حالی که، پسته فندقی با قیمت مناسب‌تر، جهت مصرف روزمره با صرفه‌تر خواهد بود</h5> 
+    <br>
+        <h2 style="font-family: 'vazir' , sans-serif;">شرایط نگهداری پسته</h2>
+    <h5 style="font-family: 'mitra' , sans-serif;">پس از خرید پسته درجه یک، برای نگهداری باید آن را در ظروف عایق هوا و رطوبت نگه داشت. پسته در دمای اتاق تا چند هفته قابل استفاده است اما اگر آن را در یخچال نگهداری کنید، می‌ توانید آن را تا چند ماه استفاده کنید. بهترین محل برای نگهداری و سالم ماندن پسته، فریزر است که سبب می شود تا حدود یک سال، سالم و قابل استفاده باشد. انواع پسته، صرف نظر از نوع و کیفیت آن‌ها، باید در محیط خشک و خنک نگهداری شوند. توجه به شرایط نگهداری این محصول، در حفظ کیفیت آن تاثیرگذار است. اگر حجم بالایی از پسته را خریداری می‌کنید، این مساله اهمیت بیشتری پیدا می‌کند.</h5>
+    
+    </div>
+<br>
+<br>
+<br>
+<div style="text-align: center;">
+<img src="img/photo_2024-12-12_17-57-46.jpg" style="width: 80%;">
+</div>
+<br>
+<br>
+<div class="container" style="margin-left: auto;margin-right: auto; max-width: 80%;font-size: 2rem;">
+
+   <div class="container1" id="darbarema">
+    <section class="intro1" style="max-width: 100%;color: #4CAF50;" >
+        
+        <h3 style="font-size: 3rem;font-family: 'vazir' , sans-serif;" >درباره ما</h3>
+        <p style="font-size: 1.5rem;color: #000000; font-family: 'mitra' , sans-serif;">فروشگاه دامون با هدف ارائه بهترین پسته‌های ایرانی به بازار تاسیس شد. ما به کیفیت و رضایت مشتری اهمیت می‌دهیم و همواره تلاش می‌کنیم بهترین محصولات را با قیمتی مناسب ارائه کنیم.</p>
+    </section>
+
+    <section class="mission1" style="max-width: 100%;color: #4CAF50;">
+        <h3 style="font-size: 3rem;font-family: 'vazir' , sans-serif;">ماموریت ما</h3>
+        <p style="font-size: 1.5rem;color: #000000; font-family: 'mitra' , sans-serif;">ماموریت ما ارائه‌ی محصولاتی با کیفیت و طبیعی است که از بهترین مزارع ایران تهیه شده‌اند. ما می‌خواهیم پسته را به عنوان یک میان‌وعده سالم و مقوی به خانواده‌ها معرفی کنیم.</p>
+    </section>
+
+    <section class="mission1" style="max-width: 100%;color: #4CAF50;">
+        <h3 style="font-size: 3rem;font-family: 'vazir' , sans-serif;">عمده فروشی دامون</h3>
+        <p style="font-size: 1.5rem;color: #000000; font-family: 'mitra' , sans-serif;">اگر دغدغه خرید پسته از باغدار را دارید و نمیدانید از چه طریقی به این مسیر دسترسی پیدا کنید نگران نباشید.مجموعه دامون در کنار شما خواهد بود.</p>
+    </section>
+    <section class="values1" style="max-width: 100%;color: #4CAF50;">
+        <h3 style="font-size: 3rem;font-family: 'vazir' , sans-serif;">ارزش‌های ما</h3>
+        
+            <p style="font-size: 1.5rem;color: #000000; font-family: 'mitra' , sans-serif;">کیفیت و اصالت محصولات</p>
+            <p style="font-size: 1.5rem;color: #000000; font-family: 'mitra' , sans-serif;">توجه به سلامت و رضایت مشتریان</p>
+            <p style="font-size: 1.5rem;color: #000000; font-family: 'mitra' , sans-serif;">احترام به طبیعت و محیط‌زیست</p>
+        
+    </section>
+</div>  
+
+    <div class="benefits" style="font-family: 'vazir' , sans-serif;">
+        <div class="benefit">
+         
+            <img src="img/photo_2024-12-12_16-45-01.jpg" alt="کیفیت تضمینی" style="height: 12rem; width: 12rem;">
+        
+            <p>کیفیت تضمینی</p>
+        </div>
+        <div class="benefit">
+            
+            <img src="img/photo_2024-12-12_16-45-58.jpg" alt="ارسال سریع" style="height: 12rem; width: 12rem;">
+      
+            <p>ارسال سریع</p>
+        </div>
+        <div class="benefit">
+            
+            <img src="img/photo_2024-12-12_17-00-18.jpg" alt="تازه‌ترین محصولات" style="height: 12rem; width: 12rem;">
+       
+            <p>پشتیبانی محصولات</p>
+        </div>
+        <div class="benefit">
+            
+            <img src="img/photo_2024-12-12_17-21-58.jpg" alt="تازه‌ترین محصولات" style="height: 12rem; width: 12rem;">
+       
+            <p>پرداخت ایمن </p>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="container2"id="tamas">
+        <section class="contact-info2" style="width: 80%;" >
+            <h2 style="font-size: 3rem; font-family: 'vazir' , sans-serif;">تماس با ما</h2>
+            <p style="font-size: 1.5rem;font-family: 'mitra' , sans-serif;">برای دریافت اطلاعات بیشتر و پشتیبانی می‌توانید از طریق شماره تلفن و ایمیل زیر با ما در تماس باشید.</p>
+            <p style="font-size: 1.5rem;font-family: 'mitra' , sans-serif;"> شماره: 09303399191 </p>
+            <p style="font-size: 1.5rem;font-family: 'mitra' , sans-serif;">ایمیل:moazame.abdolrezaei@gmail.com</p>
+            <p style="font-size: 1.5rem;font-family: 'mitra' , sans-serif;"> آدرس: کرمان-انار-بلوار ازدگان شمالی 11 پلاک 19</p>
+        </section>
+
+        <section class="form-section2" style="width: 80%;">
+            <h2 style="font-size: 3rem; font-family: 'vazir' , sans-serif;">ارسال پیام</h2>
+            <form action="#" method="post">
+                <label for="name" style="font-size: 1.5rem;font-family: 'vazir' , sans-serif;">نام:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email"  style="font-size: 1.5rem;font-family: 'vazir' , sans-serif;">ایمیل:</label>
+                <input type="email" id="email" name="email" placeholder=" moazame.abdolrezaei80@gmail.com" required>
+
+                <label for="message" style="font-size: 1.5rem;font-family: 'vazir' , sans-serif;">پیام:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit" style="font-size: 1.5rem;font-family: 'vazir' , sans-serif;">ارسال پیام</button>
+            </form>
+        </section>
+    </div>
+
+    
+
+
+
+
+    <section class="team-section1">
+        <h3 style="font-size: 3rem;color: #4CAF50; font-family: 'vazir' , sans-serif;">تیم ما</h3>
+        <p style="font-size: 1.4rem; font-family: 'mitra' , sans-serif;">تیم دامون با افتخار در خدمت شماست تا بهترین محصولات و خدمات را ارائه دهد.</p>
+        <p style="font-size: 1.4rem; font-family: 'mitra' , sans-serif;">معظمه عبدالرضایی،امیرحسین خراسانی</p>
+        
+        
+    </section>
+</div>
+
+
+
+
+
+
+
+
+
+
+    
+      
+        <br>
+
+ 
+    <footer style="font-size: 1.5rem;">
+        <div class="container">
+            <div class="footer-links">
+                <a href="file:///C:/Users/asus/Desktop/html/%D9%BE%D8%B3%D8%AA%D9%87/darbarema.html">درباره ما</a>
+            </div>
+            <div class="contact-info">
+                <p>تماس با ما: moazame.abdolrezaei80@gmail.com |09303399191</p>
+            </div>
+            <div class="social-media">
+                <a href="file:///C:/Users/asus/Desktop/html/%D9%BE%D8%B3%D8%AA%D9%87/%D8%AE%D8%A7%D9%86%D9%87.html#">اینستاگرام</a> |
+                <a href="file:///C:/Users/asus/Desktop/html/%D9%BE%D8%B3%D8%AA%D9%87/%D8%AE%D8%A7%D9%86%D9%87.html#">تلگرام</a> |
+                <a href="file:///C:/Users/asus/Desktop/html/%D9%BE%D8%B3%D8%AA%D9%87/%D8%AE%D8%A7%D9%86%D9%87.html#">واتساپ</a>
+            </div>
+        </div>
+    
+    </footer>
+
+
+</body></html>
